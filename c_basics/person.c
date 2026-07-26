@@ -14,6 +14,8 @@ Person *initPerson(char *, int);
 int main(int argc, char *argv[]) {
   Person *nick = initPerson("Nickson", 37);
   salutePerson(nick);
+  free(nick->name);
+  free(nick);
   return 0;
 }
 
